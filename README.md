@@ -3,11 +3,7 @@
 This was a fun weekend project where I tried to build a DDR
 (dance dance revolution) controller using just a webcam and some Python.
 
-<figure class="video_container">
-  <video controls="false" allowfullscreen="false" poster="img/poster.png">
-    <source src="img/demo.mp4" type="video/mp4">
-  </video>
-</figure>
+![demo GIF](img/demo.gif)
 
 ## Setup Instructions
 
