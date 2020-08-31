@@ -88,7 +88,6 @@ while(True):
     frames += 1
     if time.time() - startTime >= (t+1):
         t += 1
-        print(frames)
         fps = frames
         frames = 0
     cv2.putText(warped,'fps: '+str(fps),(10,50),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255,255,255),2,cv2.LINE_AA)

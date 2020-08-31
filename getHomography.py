@@ -17,7 +17,7 @@ def getHomography(cap, gridSize):
         frame = cv2.flip(frame,1) # mirror camera feed for easier UI
 
         location = ['bottom left','bottom right','top right','top left'][len(pts1)]
-        cv2.putText(frame,'calibration: click the '+location+' corner of your mat',(10,50),cv2.FONT_HERSHEY_SIMPLEX,2,(255,255,255),2,cv2.LINE_AA)
+        cv2.putText(frame,'calibration: click the '+location+' corner of your mat',(10,50),cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,255),1,cv2.LINE_AA)
         cv2.imshow('init',frame)
 
         if cv2.waitKey(1) & 0xFF == 27:

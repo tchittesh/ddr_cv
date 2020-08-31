@@ -18,7 +18,6 @@ def getThreshold(cap, homography, gridSize):
     while(True):
         _, frame = cap.read()
         grid = getProcessedImage(frame, homography, threshold, gridSize)
-        cv2.putText(grid,'calibration: use arrow keys to adjust threshold, press enter when done',(10,40),cv2.FONT_HERSHEY_SIMPLEX,1,(255,255,255),2,cv2.LINE_AA)
         cv2.imshow('init2',grid)
 
         k = cv2.waitKey(1)
